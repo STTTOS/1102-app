@@ -1,0 +1,51 @@
+html, body{
+    height: 100%;
+}
+#app {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.header {
+    flex-basis: 30%;
+    height: 80px;
+    display: flex;
+}
+.main {
+    height: calc(100% - 80px);
+    display: flex;
+    .nav-bar {
+        flex-basis: 200px;
+        // border: 1px solid;
+        border-right: 1px solid #ccc;
+        .list-wrapper {
+            padding: 20px 0 0 10px;
+            .list-title {
+                color: #ddd;
+            }
+            .list-item {
+                box-sizing: border-box;
+                padding: 10px 0;
+                cursor: pointer;
+                border-right: 3px solid;
+                border-right-color: transparent;
+            }
+            .list-item:hover{ 
+                background-color: rgba(175, 175, 240, 0.1);
+            }
+            .list-item.link-exact-active {
+                background-color: rgba(193, 240, 154, 0.1);
+                border-right-color: skyblue;
+            }
+            .icon {
+                color: #ddd;
+            }
+        }
+      
+    }
+    .data-view {
+        flex-basis: calc(100% - 200px);
+        max-width: calc(100% - 200px);
+        // border: 1px solid;
+    }
+}

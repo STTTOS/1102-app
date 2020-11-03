@@ -1,0 +1,9 @@
+$borderColor: #eaeefb;
+$borderRarius-small: 5px;
+$borderRarius-middle: 8px;
+$borderRarius-large: 15px;
+.my-dialog {
+    border: 1px solid $borderColor !important;
+    border-radius: $borderRarius-large !important;
+    box-shadow: 2px 2px 2px 0px rgb(255, 255,255, 1) !important;
+}
